@@ -1,29 +1,7 @@
 <head>
-  <title>Students</title>
+  <title>students List</title>
 </head>
 
 <body>
-  <h1>Students List</h1>
-
-  {{> form}}
-  {{> students}}
+  <div id="app"></div>
 </body>
-
-
-<template name="form">
-    <input type="text" id="lastname" placeholder="Ajouter un nom">
-    <input type="text" id="firstname" placeholder="Ajouter un prénom">
-    <input type="url" id="git" placeholder="Ajouter un lien Github / Gitlab">
-
-    <button type="submit" id="submit">Ajouter un étudiant</button>
-</template>
-
-
-
-<template name="students">
-  <ul>
-    {{#each all_students}}
-     <li>{{lastname}} {{firstname}}</li>
-    {{/each}}
-  </ul>
-</template>
